@@ -69,7 +69,6 @@ BuildRequires: valgrind
 BuildRequires: valgrind-devel
 %endif
 BuildRequires: elfutils-libelf-devel
-BuildRequires: gtk-doc
 BuildRequires: gnutls-devel
 BuildRequires: gnutls-utils
 BuildRequires: meson
@@ -493,7 +492,7 @@ done
 %files devel
 %{_datadir}/gir-1.0/Fwupd-2.0.gir
 %{_datadir}/gir-1.0/FwupdPlugin-1.0.gir
-%{_datadir}/gtk-doc/html/fwupd
+%{_datadir}/doc/fwupd/reference
 %{_datadir}/vala/vapi
 %{_includedir}/fwupd-1
 %{_libdir}/libfwupd*.so

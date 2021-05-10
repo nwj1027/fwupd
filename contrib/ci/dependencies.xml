@@ -538,26 +538,6 @@
       <package variant="x86_64" />
     </distro>
   </dependency>
-  <dependency type="build" id="gtk-doc-tools">
-    <distro id="arch">
-      <package>gtk-doc</package>
-    </distro>
-    <distro id="centos">
-      <package>gtk-doc</package>
-    </distro>
-    <distro id="fedora">
-      <package>gtk-doc</package>
-    </distro>
-    <distro id="debian">
-      <control />
-      <package variant="x86_64" />
-      <package variant="i386" />
-    </distro>
-    <distro id="ubuntu">
-      <control />
-      <package variant="x86_64" />
-    </distro>
-  </dependency>
   <!-- TODO: Drop help2man build dependency after 1.6.0 release -->
   <dependency type="build" id="help2man">
     <distro id="arch">

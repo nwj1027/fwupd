@@ -27,7 +27,7 @@ git push
 
 3. Generate the tarball:
 
-ninja dist
+meson dist --include-subprojects
 
 3a. Generate the additional verification metadata
 

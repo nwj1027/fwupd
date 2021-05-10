@@ -135,6 +135,7 @@ if get_option('introspection')
     includes : [
       'Gio-2.0',
       'GObject-2.0',
+#      'Json-1.0',
     ],
     install : true
   )

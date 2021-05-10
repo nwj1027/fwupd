@@ -203,6 +203,8 @@ if get_option('introspection') and get_option('gusb')
     includes : [
       'Gio-2.0',
       'GObject-2.0',
+      'GUsb-1.0',
+#      'Xmlb-2.0',
       libgusb_girtarget,
       fwupd_gir[0],
     ],

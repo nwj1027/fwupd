@@ -134,6 +134,16 @@ typedef enum {
  */
 #define FU_DEVICE_REMOVE_DELAY_USER_REPLUG		40000
 
+/**
+ * FuDeviceRetryFunc:
+ * @self: a #FuDevice
+ * @user_data: user data
+ * @error: (nullable): optional return location for an error
+ *
+ * The device retry iteration callback.
+ *
+ * Returns: %TRUE on success
+ */
 typedef gboolean (*FuDeviceRetryFunc)			(FuDevice	*device,
 							 gpointer	 user_data,
 							 GError		**error)

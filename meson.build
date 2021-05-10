@@ -529,10 +529,12 @@ endif
 
 root_incdir = include_directories('.')
 
-if get_option('gtkdoc')
-  gtkdocscan = find_program('gtkdoc-scan', required : true)
-  subdir('docs')
-endif
+gidocgen_dep = dependency(
+  'gi-docgen', version: '>= 2021.1',
+  fallback: ['gi-docgen', 'dummy_dep'],
+  required: get_option('gtkdoc'),
+)
+
 subdir('libfwupd')
 if build_daemon and get_option('polkit')
   subdir('policy')
@@ -544,6 +546,10 @@ if build_standalone
   subdir('src')
   subdir('plugins')
   subdir('contrib')
+endif
+
+if get_option('gtkdoc')
+  subdir('docs')
 endif
 
 if get_option('systemd') and build_daemon

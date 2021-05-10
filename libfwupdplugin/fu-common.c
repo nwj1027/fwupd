@@ -51,15 +51,6 @@
 #define UDISKS_DBUS_INTERFACE_BLOCK		"org.freedesktop.UDisks2.Block"
 
 /**
- * SECTION:fu-common
- * @short_description: common functionality for plugins to use
- *
- * Helper functions that can be used by the daemon and plugins.
- *
- * See also: #FuPlugin
- */
-
-/**
  * fu_common_rmtree:
  * @directory: a directory name
  * @error: (nullable): optional return location for an error
